@@ -10,17 +10,19 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  
+
+<!-- Import css -->
   <link rel="stylesheet" type="text/css" href="style.css">
+
 <!--   Import vanta.js stuff -->
   <script src="vanta/three.r95.min.js"></script>
   <script src="vanta/vanta.net.min.js"></script>
+
 </head>
 
 <body>
-  <h1>
-    Title
+  <h1 class="navbar">
+    <span class="orangeText">Ian Woo</span>
   </h1>
   <ul>
     <li><a class = active href="/">Home</a></li>
@@ -28,11 +30,15 @@
     <li><a href="">link 3</a></li>
     <li><a href="">link 4</a></li>
   </ul>
-  
+<!-- Animated Background -->
   <div id="vanta">
-    <h2>
-      test
-    </h2>
+    <div class="headerContainer">
+      <h1 id="headerLeft"></h1>
+
+      <h2 id="headerSubtitle">Beginner Programmer</h2>
+      <h2 id="headerSubtitle">Intrested in <span class="blueText">js</span> and <span class="yellowText">python</span></h2>
+    </div>
+
   </div>
   
 <script>
@@ -40,13 +46,14 @@ VANTA.NET({
   el: "#vanta",
   mouseControls: true,
   touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
+  minHeight: 800.00,
+  minWidth: window.innerWidth,
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0x3fb3ff,
   backgroundColor: 0xe041f
 })
+
 </script>
 </body>
 </html>
