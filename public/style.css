@@ -2,12 +2,6 @@
   margin: 0;
 }
 
-h1 {
-  color: white;
-  background-color: #333;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  font-size: 100px;
-}
 ul {
   list-style-type: none;
   margin: 0;
@@ -43,6 +37,54 @@ div {
   width: 600px; height: 360px; margin-bottom: 0;
 }
 
+.navbar {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-size: 100px;
+}
+
 .active {
   background-color: #3399ff;
+}
+
+.headerContainer {
+  background-color: none;
+  width: 100%;
+}
+#headerLeft {
+  padding: 18px 20px 18px 20px;
+  background-color: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-size: 500%;
+  margin-bottom: 0.5em;
+}
+
+
+#headerSubtitle {
+  padding: 18px 20px 18px 20px;
+  background-color: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-size: 350%;
+  color:rgb(196, 196, 196)
+}
+
+.blueText {
+  color: rgb(0, 204, 255)
+}
+
+.yellowText {
+  color: rgb(251, 255, 0)
+}
+
+.orangeText {
+  /* color: rgb(255, 0, 234) */
+  color: orange;
 }
