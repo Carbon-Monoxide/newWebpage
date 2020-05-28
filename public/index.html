@@ -1,59 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Homepage</title>
-  <meta name="description" content="Homepage of carbonmonoxide.ga">
-  <meta name="author" content="Ian Woo">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homepage</title>
+    <meta name="description" content="Homepage of carbonmonoxide.ga" />
+    <meta name="author" content="Ian Woo" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Import css -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Import css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
 
-<!--   Import vanta.js stuff -->
-  <script src="vanta/three.r95.min.js"></script>
-  <script src="vanta/vanta.net.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
+    <!--   Import vanta.js stuff -->
+    <script src="vanta/three.r95.min.js"></script>
+    <script src="vanta/vanta.net.min.js"></script>
 
-<body>
-  <h1 class="navbar">
-    <span class="orangeText">Ian Woo</span>
-  </h1>
-  <ul>
-    <li><a class = active href="/">Home</a></li>
-    <li><a href="">link 2</a></li>
-    <li><a href="">link 3</a></li>
-    <li><a href="">link 4</a></li>
-  </ul>
-<!-- Animated Background -->
-  <div id="vanta">
-    <div class="headerContainer">
-      <h1 id="headerLeft"></h1>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-      <h2 id="headerSubtitle">Beginner Programmer</h2>
-      <h2 id="headerSubtitle">Intrested in <span class="blueText">js</span> and <span class="yellowText">python</span></h2>
+    <script src="/script.js"></script>
+  </head>
+
+  <body style="background-color: #333;">
+    <!-- <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Ian Woo</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="homeNav" class="active" style='cursor: pointer'>
+            <a onclick="changeContent('homepage', 'information', 'projectNav', 'homeNav')">Home</a>
+          </li>
+          <li id="projectNav" style='cursor: pointer'>
+            <a  onclick="changeContent('information', 'homepage', 'homeNav', 'projectNav')">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="/">Ian Woo</a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="active" id="homeNav" style='cursor: pointer'>
+          <a class="nav-link" onclick="changeContent('homepage', 'information', 'projectNav', 'homeNav')">Home</a>
+        </li>
+        <li class="nav-item" id="projectNav" style='cursor: pointer'>
+          <a class="nav-link"  onclick="changeContent('information', 'homepage', 'homeNav', 'projectNav')">Projects</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="content" style="background-color: #333;">
+      <div id="homepage">
+        <div id="vanta">
+          <div id="headerDiv">
+            <h2 id="headerSubtitle">Beginner Programmer</h2>
+            <h2 id="headerSubtitle">
+              Intrested in <span class="blueText">js</span> and
+              <span class="yellowText">python</span>
+            </h2>
+          </div>
+        </div>
+        <script></script>
+      </div>
+      <div id="information" class="invisible" style="width: 100%; height: 100%;">asd</div>
     </div>
-
-  </div>
-  
-<script>
-VANTA.NET({
-  el: "#vanta",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 800.00,
-  minWidth: window.innerWidth,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x3fb3ff,
-  backgroundColor: 0xe041f
-})
-
-</script>
-</body>
+  </body>
 </html>

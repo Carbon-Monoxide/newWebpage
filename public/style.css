@@ -1,90 +1,89 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 * {
   margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
 }
 
-li {
-  float: left;
-  border-right: 1px solid #bbb
+body .navbar {
+  margin-bottom: 0;
 }
-
-li:last-child {
-    border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-div {
-  width: 600px; height: 360px; margin-bottom: 0;
-}
-
-.navbar {
-  color: white;
-  background-color: rgb(44, 44, 44);
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  font-size: 100px;
-}
-
-.active {
-  background-color: #3399ff;
-}
-
-.headerContainer {
-  background-color: none;
-  width: 100%;
-}
-#headerLeft {
-  padding: 18px 20px 18px 20px;
-  background-color: none;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  color: white;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  font-size: 500%;
-  margin-bottom: 0.5em;
-}
-
 
 #headerSubtitle {
   padding: 18px 20px 18px 20px;
-  background-color: none;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", sans-serif;
   font-size: 350%;
-  color:rgb(196, 196, 196)
+  color: rgb(196, 196, 196);
 }
 
 .blueText {
-  color: rgb(0, 204, 255)
+  color: rgb(0, 204, 255);
 }
 
 .yellowText {
-  color: rgb(251, 255, 0)
+  color: rgb(251, 255, 0);
 }
 
 .orangeText {
   /* color: rgb(255, 0, 234) */
   color: orange;
+}
+
+#vanta {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+#information {
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#content {
+  height: 100%;
+  flex: 1;
+}
+
+#homepage {
+  width: 100%;
+  height: 100%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#projectList {
+  color: rgb(160, 160, 160);
+}
+
+#projectContainer {
+  display:flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
